@@ -117,17 +117,17 @@ while (1)
   	{
   		switch(DadoRX[0])
   		{
-  			case '1': HAL_GPIO_TogglePin(LED_AZUL_GPIO_Port, LED_AZUL_Pin);        // Inverte valor do pino LED_AZUL
-  					  DadoRX[0] = 0;                                               // Zera caractere recebido
+  			case '1': HAL_GPIO_TogglePin(LED_AZUL_GPIO_Port, LED_AZUL_Pin);         // Inverte valor do pino LED_AZUL
+  					  DadoRX[0] = 0;                                        // Zera caractere recebido
   			  	  	  break;
-  			case '2': HAL_GPIO_TogglePin(LED_VERDE_GPIO_Port, LED_VERDE_Pin);		 // Inverte valor do pino LED_VERDE
-  					  DadoRX[0] = 0; 												 // Zera caractere recebido
+  			case '2': HAL_GPIO_TogglePin(LED_VERDE_GPIO_Port, LED_VERDE_Pin);	// Inverte valor do pino LED_VERDE
+  					  DadoRX[0] = 0; 					// Zera caractere recebido
   					  break;
-  			case '3': HAL_GPIO_TogglePin(LED_AMARELO_GPIO_Port, LED_AMARELO_Pin);	 // Inverte valor do pino LED_AMARELO
-  					  DadoRX[0] = 0; 												 // Zera caractere recebido
+  			case '3': HAL_GPIO_TogglePin(LED_AMARELO_GPIO_Port, LED_AMARELO_Pin);	// Inverte valor do pino LED_AMARELO
+  					  DadoRX[0] = 0; 					// Zera caractere recebido
   					  break;
-  			case '4': HAL_GPIO_TogglePin(LED_VERMELHO_GPIO_Port, LED_VERMELHO_Pin);// Inverte valor do pino LED_VERMELHO
-  			  	  	  DadoRX[0] = 0;  	  	  	  	  	  	  	  	  	  	  	 // Zera caractere recebido
+  			case '4': HAL_GPIO_TogglePin(LED_VERMELHO_GPIO_Port, LED_VERMELHO_Pin); // Inverte valor do pino LED_VERMELHO
+  			  	  	  DadoRX[0] = 0;  	  	  	  	  	// Zera caractere recebido
   					  break;
   		}
 
